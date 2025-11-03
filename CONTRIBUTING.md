@@ -361,49 +361,20 @@ Every solution must include:
 ```python
 # Good
 def convert_to_spooky_case(variable_name: str) -> str:
-    """Convert variable name to spooky case."""
-    result = []
-    uppercase = True
-    
-    for char in variable_name:
-        if char in '_-':
-            result.append('~')
-        else:
-            # Logic here
-            pass
-    
-    return ''.join(result)
 
 # Bad
 def f(s):
-    r=[]
-    u=True
-    for c in s:
-        if c=='_' or c=='-':r.append('~')
-        # Unreadable compressed code
-    return ''.join(r)
+
 ```
 
 #### JavaScript (Airbnb Style)
 ```javascript
 // Good
 function convertToSpookyCase(variableName) {
-  const result = [];
-  let isUppercase = true;
-  
-  for (const char of variableName) {
-    if (char === '_' || char === '-') {
-      result.push('~');
-    } else {
-      // Logic here
-    }
-  }
-  
-  return result.join('');
 }
 
 // Bad
-function f(s){var r=[],u=true;for(var i=0;i<s.length;i++){if(s[i]=='_'||s[i]=='-')r.push('~');}return r.join('');}
+function f(s){}
 ```
 
 ---
